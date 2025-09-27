@@ -50,6 +50,11 @@ body {
   color: #ff6b6b;
   font-size: 18px;
 }
+
+#auther {
+  color: #85858576;
+}
+
 /* falling chars */
 .char {
   position: absolute;
