@@ -1,4 +1,4 @@
-(() => {
+const startGame = () => {
   const container = document.getElementById("game-container");
   const scoreEl = document.getElementById("score");
   const highEl = document.getElementById("highscore");
@@ -168,4 +168,10 @@
 
   restartBtn.onclick = start;
   start();
-})();
+};
+
+const startBtn = document.querySelector(".start");
+startBtn.addEventListener("click", () => {
+  startGame();
+  startBtn.style.display = "none";
+});
