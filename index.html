@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Typing Shooter — Final</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container" tabindex="0">
+      <div id="hud">
+        <div class="pill">Score:<strong id="score">0</strong></div>
+        <div class="pill">High:<strong id="highscore">0</strong></div>
+        <div class="pill">Combo:<strong id="combo">0</strong></div>
+        <div class="pill">Acc:<strong id="accuracy">100%</strong></div>
+        <div id="lives" class="pill">❤️❤️❤️</div>
+      </div>
+      <div id="overlay">
+        <div id="game-over">
+          <h2>GAME OVER</h2>
+          <p id="final-score"></p>
+          <p id="final-high"></p>
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+      <div id="glitch"></div>
+    </div>
+
+    <audio
+      id="gun-audio"
+      src="https://www.soundjay.com/mechanical/sounds/gun-gunshot-01.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
