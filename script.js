@@ -1,7 +1,10 @@
+let high = +localStorage.getItem("typerHigh") || 0;
+const highEl = document.getElementById("highscore");
+highEl.textContent = high;
+
 const startGame = () => {
   const container = document.getElementById("game-container");
   const scoreEl = document.getElementById("score");
-  const highEl = document.getElementById("highscore");
   const comboEl = document.getElementById("combo");
   const accEl = document.getElementById("accuracy");
   const livesEl = document.getElementById("lives");
@@ -15,7 +18,6 @@ const startGame = () => {
 
   let chars = [],
     score = 0,
-    high = +localStorage.getItem("typerHigh") || 0,
     lives = 3;
   let combo = 0,
     hits = 0,
@@ -24,8 +26,6 @@ const startGame = () => {
     spawnTimeout,
     gameOver = false,
     lastTime = 0;
-
-  highEl.textContent = high;
 
   // Speed settings
   const baseSpeed = 0.7; // slower than before
